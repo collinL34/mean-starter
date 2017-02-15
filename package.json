@@ -1,0 +1,25 @@
+{
+  "name": "mean-starter",
+  "version": "1.0.0",
+  "description": "basic mean starter application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collinL34/mean-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/collinL34/mean-starter/issues"
+  },
+  "homepage": "https://github.com/collinL34/mean-starter#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.2"
+  }
+}
