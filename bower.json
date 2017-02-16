@@ -13,5 +13,13 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular": "^1.6.2",
+    "angular-routing": "^0.1.2",
+    "animate.css": "^3.5.2",
+    "MDBootstrap": "^4.3.0"
+  }
 }
