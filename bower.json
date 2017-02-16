@@ -1,0 +1,17 @@
+{
+  "name": "mean-starter",
+  "description": "basic mean starter application",
+  "main": "server.js",
+  "authors": [
+    "collinl34 <collinlshelby@gmail.com>"
+  ],
+  "license": "mit",
+  "homepage": "https://github.com/collinL34/mean-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
