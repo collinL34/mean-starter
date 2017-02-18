@@ -1,1 +1,1 @@
-angular.module('angular', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService']);
+angular.module('Angular', ['ngRoute', 'appRoutes', 'HomeCtrl', 'NerdsCtrl', 'Nerds']);

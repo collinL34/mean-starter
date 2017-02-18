@@ -1,30 +1,18 @@
 {
-  "name": "mean-starter",
+  "name": "apps",
   "version": "1.0.0",
-  "description": "basic mean starter application",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/collinL34/mean-starter.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/collinL34/mean-starter/issues"
-  },
-  "homepage": "https://github.com/collinL34/mean-starter#readme",
   "dependencies": {
-    "angular": "^1.6.2",
     "body-parser": "^1.16.1",
-    "bootstrap": "^3.3.7",
     "express": "^4.14.1",
-    "jquery": "^3.1.1",
-    "mdbootstrap": "^4.3.0",
     "method-override": "^2.3.7",
-    "mongoose": "^4.8.2",
-    "morgan": "^1.8.1"
+    "mongoose": "^4.8.3"
   }
 }

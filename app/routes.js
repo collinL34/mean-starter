@@ -1,16 +1,15 @@
-const Nerd = require('./models/food.js');
+const Nerd = require('../config/db.js');
 
 module.exports = function(app) {
-    app.get('/api/foods', function(req, res) {
-        Food.find(function(err, foods) {
+    app.get('/api/nerds', function(res, req) {
+        Nerd.find(function(err) {
             if (err)
-                res.send(err)
-
-            res.json(foods);
-        })
-    })
+                res.json(nerds);
+        });
+    });
 
     app.get('*', function(req, res) {
         res.sendfile('./public/index.html'); // load our public/index.html file
     });
-};
+
+}

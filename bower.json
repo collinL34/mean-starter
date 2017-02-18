@@ -1,12 +1,12 @@
 {
-  "name": "mean-starter",
-  "description": "basic mean starter application",
+  "name": "apps",
+  "description": "",
   "main": "server.js",
   "authors": [
     "collinl34 <collinlshelby@gmail.com>"
   ],
-  "license": "mit",
-  "homepage": "https://github.com/collinL34/mean-starter",
+  "license": "ISC",
+  "homepage": "https://github.com/collinL34/learningMean",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,11 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
     "angular": "^1.6.2",
-    "angular-routing": "^0.1.2",
-    "animate.css": "^3.5.2",
-    "MDBootstrap": "^4.3.0"
+    "font-awesome": "^4.7.0",
+    "MDBootstrap": "^4.3.0",
+    "angular-route": "^1.6.2"
   }
 }

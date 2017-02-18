@@ -3,58 +3,98 @@
 
 <head>
     <meta charset="utf-8">
-    <base href="">
-    <title>title this is my title</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <title>yes I do remember</title>
+    <base href="/">
+
     <link rel="stylesheet" type="text/css" href="libs/MDBootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- custom styles -->
-    <!-- JS -->
-    <script src="libs/angular/angular.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="libs/bootstsrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src='libs/angular/angular.min.js'></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
-    <!-- ANGULAR CUSTOM -->
-    <script src="js/controllers/MainCtrl.js"></script>
-    <script src="js/controllers/NerdCtrl.js"></script>
-    <script src="js/services/NerdService.js"></script>
+
+    <script src="js/controllers/HomeCtrl.js"></script>
+    <script src="js/controllers/NerdsCtrl.js"></script>
+    <script src="js/services/Nerds.js"></script>
     <script src="js/appRoutes.js"></script>
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src='js/app.js'></script>
 </head>
 
-<body ng-app="angular" ng-controller="NerdCtrl">
-    <!-- HEADER -->
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">Stencil: Node and Angular</a>
+<body ng-app="Angular" ng-controller="HomeCtrl">
+    <div ng-view></div>
+
+<!--Navigation & Intro-->
+<header>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="http://mdbootstrap.com/img/logo/mdb-transparent-sm-shadows.png" class="d-inline-block align-top" alt="MDBootstrap">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item">Action</a>
+                            <a class="dropdown-item">Another action</a>
+                            <a class="dropdown-item">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
-        <ul class="nav navbar-nav">
-            <li><a href="/nerds">Nerds</a></li>
-        </ul>
     </nav>
     <!--Mask-->
-    <div class="view">
-        <!--Intro content-->
+    <div class="view hm-black-strong">
         <div class="full-bg-img flex-center">
-            <ul>
-                <li>
-                    <h1 class="h1-responsive white-text">Come on Lets Start shopping for Groceries!</h1></li>
-                <li>
-                    <p class='white-text'>The most powerful and free UI KIT for Bootstrap</p>
-                </li>
-                <li>
-                    <a target="_blank" href="" class="btn btn-primary btn-lg">Start Shopping!</a>
-                </li>
-            </ul>
+            <div class="container">
+                <div class="white-text text-center wow fadeInUp">
+                    <h2>This Navbar is fixed</h2>
+                    <h5>It will always stay visible on the top, even when you scroll down</h5>
+                    <br>
+                    <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+                </div>
+            </div>
         </div>
-        <!--/Intro content-->
     </div>
     <!--/.Mask-->
-    </div>
-    <div ng-view>
-    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src='js/app.js'></script>
+</header>
+<!--/.Navigation & Intro-->
+<!--Main layout-->
+<main class="pt-6 text-center">
+    <h2>Your content</h2>
+</main>
+<!--/Main layout-->
+
+
+
+    <script type="text/javascript" src='libs/jquery/dist/jquery.min.js'></script>
+    <script type="text/javascript" src='libs/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='libs/MDBootstrap/js/mdb.min.js'></script>
 </body>
 
 </html>
