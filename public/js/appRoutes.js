@@ -4,16 +4,10 @@ angular.module('appRoutes', [])
         $routeProvider
 
         // home page
-            .when('/', {
-            templateUrl: 'views/home.html',
-            controller: 'HomeCtrl'
-        })
-
-        // nerds page that will use the NerdController
-        .when('/nerds', {
-            templateUrl: 'views/nerd.html',
-            controller: 'NerdsCtrl'
-        });
+        //     .when('/', {
+        //     templateUrl: 'views/home.html',
+        //     controller: 'HomeCtrl'
+        // })
 
         $locationProvider.html5Mode(true);
 
